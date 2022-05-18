@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Odd Even Program</title>
+	<style type="text/css">
+		button{
+			background-color: blue;
+			color: white;
+			border-radius: 25px;
+			width: 200px;
+			height: 50px;
+			font-size: 20px;
+			border:none;
+		}
+		button:hover
+		{
+			background-color: cyan;
+			color: black;
+			border-radius: 0px 25px 0px 25px ;
+		}
+		h2
+		{
+			line-height: 10px;
+		}
+	</style>
+</head>
+<body>
+<p>Please check Number that number is  odd or Even by program</p>
+<h2>* Simple</h2>
+<h2>* While loop</h2>
+<h2>* Do while loop</h2>
+<textarea id="output" rows="5" cols="25"></textarea>
+<input type="text"  id="amr" placeholder="Enter Number....">
+<button onclick="odde()" id="bt">Check</button>
+<button onclick="again()" id="bt1">Again Check</button>
+<button onclick="onceagain()" id="bt1">Once Again Check</button>
+</body>
+<script type="text/javascript">
+	//a=parseInt(prompt("Enter Number"));
+    	
+	function odde()
+	{
+		y=document.getElementById("amr").value;
+		
+        //document.getElementById("output").innerHTML=y;		
+	if (y%2==0)
+	
+	 	 	document.getElementById("output").innerHTML="Enven no";
+	 
+	 else
+	    document.getElementById("output").innerHTML="Odd no";
+    }
+    function again()
+	{
+				//n=document.getElementById("amr").value;
+		var n, a='y';
+		while (a=='y')
+		{
+        n=parseInt(prompt("Enter no"));
+        
+
+        //document.getElementById("output").innerHTML=y;		
+	if (n%2==0)
+	
+	 	 	alert("Enven no");
+	 
+	 else
+	    alert("Odd no");
+	a=prompt("do you want to continue");
+	}
+
+    }
+    function onceagain()
+	{
+				//n=document.getElementById("amr").value;
+		var n, a='y';
+		do{
+
+        n=parseInt(prompt("Enter no"));
+        
+
+        //document.getElementById("output").innerHTML=y;		
+	if (n%2==0)
+	
+	 	 	alert("Enven no");
+	 
+	 else
+	    alert("Odd no");
+	a=prompt("do you want to continue");
+	}
+		
+		while (a=='y')
+		
+
+    }
+	    	
+</script>
+</html>
